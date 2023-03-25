@@ -27,6 +27,8 @@ use std::{fs::File, path::Path};
 pub use error::Error;
 pub use lopdf;
 pub use user_signature_info::{UserFormSignatureInfo, UserSignatureInfo};
+pub use cryptographic_message_syntax::SignerBuilder;
+pub use x509_certificate::{CapturedX509Certificate, InMemorySigningKeyPair};
 
 /// The whole PDF document. This struct only loads part of the document on demand.
 #[derive(Debug, Clone)]
